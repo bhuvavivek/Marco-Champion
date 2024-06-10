@@ -1,0 +1,179 @@
+.main {
+  margin-top: 120px !important;
+  max-width: 1269px;
+  margin: auto;
+  margin-bottom: 52px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.epBox {
+  padding-block: 43px 23px;
+  padding-inline: 50px;
+  width: 90%;
+
+  background: url(https://ed-mylett-web.s3.us-west-1.amazonaws.com/swc-9Ru35.png)
+    no-repeat center center;
+  background-size: cover;
+}
+.epBox h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.epBox h4 {
+  text-align: center;
+  color: #ffffff99;
+  padding-top: 1rem;
+  font-size: 20px;
+}
+.epBox h3 {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 10px;
+}
+.epBox h2 {
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+.boxButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.boxButton button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  background: #c19752;
+  border: 2px solid #c19752;
+  font-size: 17px;
+  padding: 11px 46px;
+  cursor: pointer;
+}
+.boxButton button img {
+  width: 20px;
+}
+.boxButton button:hover {
+  background: #001830;
+  border: 2px solid white;
+}
+.boxRight {
+  background: url(https://www.edmylett.com/img/latestSubscribe/show.svg)
+    no-repeat center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxRight h1 {
+  text-align: center;
+  color: #001838;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.boxRight h3 {
+  font-weight: 400;
+  color: #001838;
+  font-size: 20px;
+  line-height: 0.03rem;
+  letter-spacing: 0.1rem;
+  padding-top: 14px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.socialBox {
+  display: flex;
+  padding: 13px 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid;
+  -o-border-image: linear-gradient(0deg, rgba(231, 236, 242, 0), #e7ecf2) 1;
+  border-image: linear-gradient(0deg, rgba(231, 236, 242, 0), #e7ecf2) 1;
+  box-shadow: 0 22px 25px -22px rgba(8, 34, 69, 0.5);
+}
+
+@media screen and (max-width: 681px) {
+  .main {
+    margin-top: 50px !important;
+  }
+  .box {
+    flex-direction: column;
+  }
+
+  .boxLeft {
+    width: 100%;
+  }
+  .epBox {
+    padding-block: 33px 23px;
+    padding-inline: 0;
+    width: 100%;
+    margin: auto;
+  }
+  .epBox h1 {
+    font-size: 24px;
+  }
+  .epBox h4 {
+    font-size: 18px;
+  }
+  .epBox h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  .epBox h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .boxButton {
+    gap: 10px;
+    width: 100%;
+  }
+  .boxButton button {
+    font-size: 14px;
+    padding: 11px 48px;
+  }
+  .boxButton button img {
+    width: 18px;
+  }
+
+  .boxRight h1 {
+    font-size: 24px;
+  }
+  .boxRight h3 {
+    font-size: 16px;
+    line-height: 0.03rem;
+    letter-spacing: 1px;
+    padding-top: 7px;
+  }
+  .social {
+    padding-inline: 10px;
+  }
+  .socialBox {
+    padding: 10px 10px;
+  }
+
+  .socialBox img {
+    width: 130px;
+  }
+}

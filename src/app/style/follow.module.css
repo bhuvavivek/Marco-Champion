@@ -1,0 +1,37 @@
+/* follow.module.css */
+
+.main {
+    padding: 80px 50px;
+  }
+
+  .centerContent {
+    text-align: center;
+  }
+  .centerContent h1{
+    color: #001838;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  }
+  .centerContent h2{
+    font-weight: 500;
+  font-size: 25px;
+  line-height: 0.03rem;
+  letter-spacing: 0.1rem;
+  padding-top: 20px;
+  margin-block: 15px 100px;
+  }
+
+  .flexContainer {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .imageContainer {
+    width: 30%;
+  }
+  .imageContainer img {
+    width: 100%;
+  }

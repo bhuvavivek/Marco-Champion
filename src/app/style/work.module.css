@@ -1,0 +1,95 @@
+.container {
+  background-image: url(/images/workbg.png);
+  padding: 80px 50px 112px;
+}
+.container h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: #001838;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.boxRight {
+  flex: 1;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.Sbox {
+  /* flex: 1; */
+  display: flex;
+  max-width: 394px;
+
+  background-color: #001838;
+}
+.boxLeft {
+  padding: 30px 0 0 30px;
+  flex: 1;
+}
+.boxRight img {
+  width: 100%;
+}
+.boxLeft h4 {
+  font-size: 17px;
+  margin-bottom: 22px;
+  color: #fff;
+}
+.boxLeft p {
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+.boxLeft button {
+  padding: 5px 16px;
+  color: #fff;
+  background: #c19752;
+  border: 2px solid #c19752;
+  border-radius: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.boxLeft button:hover {
+  background-color: #001838;
+  border: 2px solid white;
+}
+.Sbox2 {
+  background: #c19752;
+}
+.Sbox2 button {
+  background-color: #001838;
+}
+.Sbox2 h4,
+.Sbox2 p {
+  color: #001838;
+}
+
+@media screen and (max-width: 681px) {
+  .container {
+    background-image: url(/images/workbg.png);
+    padding: 25px 15px 25px;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .boxLeft {
+    padding: 15px 0 15px 15px;
+  }
+  
+  .boxLeft p {
+    margin-bottom: 40px;
+  }
+ 
+}

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Blanka";
+  src: url("/font/Blanka-Regular.otf") format("truetype");
+  /* Adjust the path and font format as needed */
+}
+
+@font-face {
+  font-family: "Sprite Graffiti";
+  src: url("/font/SpriteGraffiti-Regular.ttf") format("truetype");
+  /* Adjust the path and font format as needed */
+}
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  width: 100%;
+  /* max-width:1263px;
+    margin: auto; */
+  background: linear-gradient(180deg, #eaeaec, #f9f9fa00);
+}
+
+/* .jh{
+    min-height: 3000px;
+} */
+
+h1,
+h2,
+h3,
+span {
+  font-family: "Open Sans", sans-serif !important;
+  /* Bebas Neue font for h1 and h2 */
+  margin: 0;
+}
+
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Open Sans", sans-serif !important;
+  /* Use Open Sans for h3, h4, h5, h6, and paragraphs */
+  margin: 0;
+}
+
+.colorPrimary {
+  color: #c19752 !important;
+}
+
+.active {
+  color: white !important;
+}
+
+/*
+loading component design */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.three-body {
+  --uib-size: 35px;
+  --uib-speed: 0.8s;
+  --uib-color: black;
+  position: relative;
+  display: inline-block;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+}
+
+.three-body__dot {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+}
+
+.three-body__dot:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: var(--uib-color);
+  border-radius: 50%;
+}
+
+.three-body__dot:nth-child(1) {
+  bottom: 5%;
+  left: 0;
+  transform: rotate(60deg);
+  transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(1)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite ease-in-out;
+  animation-delay: calc(var(--uib-speed) * -0.3);
+}
+
+.three-body__dot:nth-child(2) {
+  bottom: 5%;
+  right: 0;
+  transform: rotate(-60deg);
+  transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(2)::after {
+  bottom: 0;
+  left: 0;
+  animation: wobble1 var(--uib-speed) infinite calc(var(--uib-speed) * -0.15) ease-in-out;
+}
+
+.three-body__dot:nth-child(3) {
+  bottom: -5%;
+  left: 0;
+  transform: translateX(116.666%);
+}
+
+.three-body__dot:nth-child(3)::after {
+  top: 0;
+  left: 0;
+  animation: wobble2 var(--uib-speed) infinite ease-in-out;
+}
+
+@keyframes spin78236 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wobble1 {
+
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-66%) scale(0.65);
+    opacity: 0.8;
+  }
+}
+
+@keyframes wobble2 {
+
+  0%,
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(66%) scale(0.65);
+    opacity: 0.8;
+  }
+}
+
+.blanka {
+  font-family: "Blanka", sans-serif !important;
+  letter-spacing: 1px;
+}
+
+.sprite-graffiti {
+  font-family: "Sprite Graffiti", sans-serif !important;
+  letter-spacing: 0.5px;
+}

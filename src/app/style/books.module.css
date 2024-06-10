@@ -1,0 +1,90 @@
+.container{
+    padding: 80px 50px;
+    text-align: center;
+    max-width: 1263px;
+    margin: auto;
+
+}
+.container h1{
+    text-transform: uppercase;
+    font-size: 40px;
+   letter-spacing: 1rem;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .03em;
+}
+.container h3{
+    font-weight: 600;
+    font-size: 27px;
+}
+.books{
+    max-width: 1590rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.Sbooks{
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.book img{
+    width: 100%;
+}
+
+
+.button {
+    border: 4px solid #c19752;
+    padding: 12px 30px;
+    margin-top: 1.5rem;
+    background-color: transparent;
+    min-width: 180px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #c19752;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.button:hover {
+    background-color: #c19752;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 681px) { 
+    .container{
+        padding: 30px 15px;
+        overflow-x: hidden;
+    }
+    .container h1{
+        font-size: 24px;
+    }
+    .container h3{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .books{
+        margin: auto;
+    }
+    .Sbooks{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+  
+    .book img{
+        width: 201px;
+    }
+
+    
+}
+
+.text {
+    font-size: 1.38rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+}

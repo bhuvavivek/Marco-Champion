@@ -1,0 +1,177 @@
+.container {
+  /* background-color: red; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container.open {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.container.close {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.419);
+  backdrop-filter: blur(2px);
+}
+
+.card {
+  background-color: #fff;
+  position: relative;
+  padding: 1rem 1.5rem;
+  width: calc(400px - 2rem);
+  display: flex;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.textBox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 23px 0px;
+}
+
+.textBox h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: darkgreen;
+}
+@media (max-width: 600px) {
+  .textBox h1{
+    font-size: 22px;
+  }
+}
+
+.textBox h2 {
+  text-align: center;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  .textBox h2{
+    font-size: 18px;
+  }
+}
+
+.input {
+  border: 2px solid lightgray;
+  width: calc(100% - 2rem);
+  margin-top: 0.7rem;
+  background-color: rgba(239, 239, 239, 0.709);
+  height: 2.7rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.input::placeholder {
+  font-style: italic;
+}
+
+.input:focus {
+  outline: none;
+}
+
+
+.textBox button {
+  margin-top: 0.8rem;
+  width: 100%;
+  /* padding: 1rem 0; */
+  height: 2.7rem;
+  border: none;
+  background-color: darkgreen;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.checkBox {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.card2 {
+  height: calc(600px - 3.5rem);
+  background-color: #fff;
+  position: relative;
+  width: calc(400px - 2rem);
+  background-image: url("/images/Popup2.png");
+  background-size: contain;
+  padding: 2.5rem 1rem 1rem;
+}
+
+.textBox2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textBox2 h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: darkgreen;
+  text-transform: uppercase;
+}
+
+.textBox2 button {
+  width: 100%;
+  height: 3rem;
+  border: 3px solid #fff;
+  background-color: black;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}

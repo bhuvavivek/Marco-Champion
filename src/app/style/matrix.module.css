@@ -1,0 +1,95 @@
+/* In styles.module.css */
+.heroMain {
+  position: relative;
+  /* Ensure relative positioning for absolute elements */
+  /* Add any other styles for the heroMain div */
+  width: 100%;
+
+}
+
+
+/* In styles2.module.css */
+
+
+.matrixVideo {
+  width: 100%;
+  /* height: 900px; */
+  height: 855px;
+  max-height: 854px;
+  box-sizing: border-box;
+  object-fit: cover;
+  overflow: hidden;
+  margin-top: 90px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/images/Matrix-Hero.svg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GIFVideo {
+  width: 68%;
+  max-width: 1300px;
+  height: 80%;
+  max-height: 80%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.GIFVideo img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .GIFVideo img{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.footerContainer {
+  padding: 80px 20px;
+  max-width: 1380px;
+  margin: auto;
+  /* margin-top: 80px; */
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.left {
+  width: 100%;
+}
+
+.left ul {
+  padding: 0;
+}
+
+.left h1 {
+  font-size: 1.5rem;
+}
+
+.right {
+  width: 100%;
+}
+
+.right h1 {
+  text-align: end;
+}
+@media (max-width: 600px) {
+  .right h1{
+    text-align: center;
+  }
+}

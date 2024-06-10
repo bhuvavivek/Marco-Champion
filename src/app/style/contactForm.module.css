@@ -1,0 +1,136 @@
+.hero {
+  position: relative;
+  padding-block: 85px;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.edmylett.com/_next/static/media/background.bc46586b.png)
+    center/cover;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow the container */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #001838; /* Adjust the color values */
+  opacity: 0.9; /* Adjust the transparency as needed */
+}
+.contactForm {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  z-index: 0;
+  position: relative;
+}
+.contactForm h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  text-align: left;
+}
+.contactForm input,
+.contactForm textarea {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  background: #f5f5f6;
+  font-size: 16px;
+  outline: none;
+  width: 70%;
+  text-align: center;
+  -webkit-appearance: none;
+  margin-bottom: 10px;
+}
+.contactForm form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contactForm button {
+  width: 82.6%;
+  padding: 16px 40px;
+  font-size: 16px;
+  background-color: #c19752;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.contactForm button:hover {
+  background-color: #001838;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.Cpage {
+  background: none;
+  padding-inline: 50px;
+  margin-top: 9rem;
+}
+.inputHide {
+  display: none;
+}
+.inputs {
+  margin-bottom: 1.5rem !important;
+}
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 681px) {
+  .hero {
+    padding-block: 65px;
+  }
+
+  .contactForm {
+    padding: 20px 5px;
+  }
+  .contactForm h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    padding: 16px 20px;
+    background: #f5f5f6;
+    font-size: 14px;
+    width: 83%;
+  }
+  .contactForm form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contactForm button {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .Cpage {
+    background: none;
+    padding-inline: 0 !important;
+    padding-block: 2rem !important;
+    margin-top: 0rem;
+  }
+  .inputHide {
+    display: none;
+  }
+  .inputs {
+    margin-bottom: 1.5rem !important;
+  }
+  .hide {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+.header {
+  height: fit-content;
+  background: url('/images/topHeader.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.6rem;
+  gap: 1rem;
+  position: relative;
+  z-index: 999999;
+}
+
+
+.cout {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.btn {
+  padding: 10px 15px;
+  background: #216023;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #216023;
+}
+
+@media screen and (max-width: 681px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .cout {
+    font-size: 10px;
+  }
+
+  .btn {
+    padding: 10px 10px;
+    white-space: nowrap;
+  }
+}

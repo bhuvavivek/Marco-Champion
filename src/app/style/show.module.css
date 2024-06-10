@@ -1,0 +1,296 @@
+.showMain {
+  padding-top: 12.5rem;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  /* background-image: url(/images/showbg.png); */
+  text-align: center;
+}
+
+.lastPodcast h4 {
+  font-size: 1.38rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+}
+
+.lastPodcast h1 {
+  font-size: 3.9rem;
+  line-height: 5rem;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .lastPodcast h1{
+    font-size: 22px;
+  }
+}
+
+.lastPodcast h3 {
+  font-size: 28px;
+  line-height: 3rem;
+  color: #000;
+  margin-top: 2rem;
+}
+
+.newslater {
+  margin-block: 2rem;
+}
+
+.newslater input {
+
+
+  padding-block: 17px;
+
+  font-size: 17px;
+  width: 100%;
+  min-width: 500px;
+  border: none;
+  background-color: #fff;
+  text-align: center;
+}
+
+.newslater input:focus {
+  outline: none;
+}
+
+.lastPodcast button {
+  color: #fff;
+  background: #c19752;
+  border: 2px solid #c19752;
+  padding-inline: 40px;
+  padding-block: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.lastPodcast button:hover {
+  background-color: #000;
+  border: 2px solid #fff;
+  margin-top: 15px;
+}
+
+.ep1 {
+  border-right: 2px solid #a1a7af;
+  padding-right: 40px;
+}
+
+.ep2 {
+  padding-left: 40px;
+}
+
+.ep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ep2 h2,
+.ep1 h2 {
+  color: #001838;
+  font-weight: 700;
+}
+
+.ep2 h6,
+.ep1 h6 {
+  color: #617183;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+}
+
+.epBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.epMainBox {
+  width: 393px;
+  /* margin-inline: 15px; */
+  overflow: hidden;
+  position: relative;
+}
+
+.epMainBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 62, 129, 0), #000);
+}
+
+.epMainBox img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 62, 129, 0), #003e81);
+}
+
+.epMainBox img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.epMainBox:hover img {
+  transform: scale(1.2);
+  /* You can adjust the scaling factor as needed */
+}
+
+.epMainBoxHead {
+  position: absolute;
+  top: 13px;
+  color: #fff;
+
+  /* left: 10rem; */
+  /* te */
+  text-align: center;
+  font-size: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.epMainBoxDetail {
+  position: absolute;
+  bottom: 16px;
+  color: #fff;
+  /* left: 12px; */
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.epMainBoxDetail h3 {
+  margin-top: 0;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 25px;
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .newslater input {
+    min-width: 90%;
+  }
+
+  .showMain {
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+  }
+
+  .lastPodcast h4 {
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+
+  .lastPodcast h1 {
+    font-size: 1.8rem;
+    line-height: normal;
+    margin-top: 5px;
+  }
+
+  .lastPodcast h3 {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .lastPodcast button {
+    margin-block: 1.5rem;
+    padding-inline: 40px;
+    padding-block: 12px;
+    font-size: 18px;
+  }
+
+  .lastPodcast button:hover {
+    border: 2px solid #fff;
+  }
+
+  .ep1 {
+    border-right: 2px solid #a1a7af;
+    padding-right: 0;
+  }
+
+  .ep2 {
+    padding-left: 0;
+  }
+
+  .ep2 h2,
+  .ep1 h2 {
+    font-size: 20px;
+  }
+
+  .ep2 h6,
+  .ep1 h6 {
+    font-size: 12px;
+  }
+
+  .epBox {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 0;
+    margin-block: 20px;
+  }
+
+  .epMainBox {
+    width: 393px;
+    height: 344px;
+    margin-inline: 15px;
+    overflow: hidden;
+    position: relative;
+    background-color: gold;
+  }
+}
+
+
+.subHeading {
+  font-size: 1.38rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+@media (max-width:600px) {
+  .subHeading{
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width:700px) and (max-width:1200px) {
+  .epMainBoxHead {
+    font-size: 13px;
+  }
+
+  .epMainBoxDetail h2 {
+    font-size: 15px;
+  }
+
+  .epMainBoxDetail h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

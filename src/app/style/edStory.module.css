@@ -1,0 +1,80 @@
+.containerMain {
+  background: white;
+}
+.main {
+  padding-inline: 50px;
+  padding-block: 80px;
+
+  max-width: 1269px;
+  margin: auto;
+}
+.main h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: #001838;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: center;
+  /* margin-bottom: 3rem; */
+}
+.ed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 3rem;
+}
+.edBox {
+  flex: 1;
+  font-size: 16px;
+  color: #001838;
+  /* font-weight: 400; */
+  padding-top: 80px;
+}
+.edBox h3 {
+  font-weight: 300;
+}
+.edBox img {
+  margin-inline: 86px;
+}
+.edFlex {
+  flex-direction: row-reverse;
+}
+.heading {
+  font-size: 20px !important;
+  color: #c19752 !important;
+  font-style: italic;
+}
+
+
+@media screen and (max-width: 681px) {
+ 
+  .main {
+    padding-inline: 15px;
+    padding-block: 25px;
+  }
+  .main h1 {
+    font-size: 28px;
+  }
+  .ed {
+    gap: 0px;
+    margin-bottom: 1rem;
+    flex-direction: column;
+  }
+  .edBox {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+ 
+  .edBox img {
+    margin-inline: 0px;
+    width: 100%;
+  }
+  .edFlex {
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 18px !important;
+  }
+}

@@ -1,0 +1,180 @@
+/* Navbar.module.css */
+
+.navbar-header {
+  max-width: 1263px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  /* padding-inline: 50px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  background-color: transparent;
+  /* Replace with your desired background color */
+  color: #fff;
+  /* Replace with your desired text color */
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 9999999;
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.logo {
+  margin-right: auto;
+  width: 53px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 50px;
+  /* Adjust the size as needed */
+  height: 50px;
+  /* Adjust the size as needed */
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links a {
+  margin: 0 10px;
+  color: #ffffff80;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.navbar.scrolled {
+  background-color: #000 !important;
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+  z-index: 999999;
+}
+
+.active {
+  color: white;
+}
+
+.scrollDiv {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menuBar {
+  display: none;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 999;
+  background-color: #001838 !important;
+  display: none;
+  transition: height 0.3s ease;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrolled .mobileMenu {
+  top: 60px;
+}
+
+@media screen and (max-width: 681px) {
+  .navbar-header {
+    width: 100%;
+    background-color: gold !important;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding-block: 0.8rem;
+    padding-left: 0px;
+    padding-right: 0;
+    width: 98%;
+  }
+
+  .logo {
+    width: auto;
+    height: auto;
+  }
+
+  .logo img {
+    width: 85px;
+  }
+
+  .logoImage {
+    width: 50px;
+    /* Adjust the size as needed */
+    height: 50px;
+    /* Adjust the size as needed */
+  }
+
+  .links {
+    align-items: center;
+    gap: 1rem;
+    display: none;
+  }
+
+  .links a {
+    margin: 0 10px;
+    color: #ffffff80;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    color: white;
+  }
+
+  .navbar.scrolled {
+    width: 100%;
+  }
+
+  .scrollDiv {
+    padding: 5px 11px;
+  }
+
+  .menuBar {
+    display: block;
+    font-size: 25px;
+  }
+
+  .togle {
+    display: flex;
+    height: 50vh;
+    gap: 10px;
+  }
+
+  .mobileMenu a {
+    color: #ffffff80;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}

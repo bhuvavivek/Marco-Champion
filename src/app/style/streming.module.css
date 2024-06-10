@@ -1,0 +1,82 @@
+/* streming.module.css */
+
+.main {
+    background: linear-gradient(180deg, #eaeaec, #f9f9fa00);
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .hero {
+    padding-inline: 50px;
+    padding-top: 136px;
+    text-align: center;
+  }
+
+  .heading {
+
+    color: #001838;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .subHeading {
+    font-weight: 500;
+
+  font-size: 25px;
+  line-height: 0.03rem;
+  letter-spacing: 0.1rem;
+  padding-top: 20px;
+  }
+
+  .columnContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap  :wrap ;
+    margin-top: 81px;
+  }
+
+  .column {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+
+  }
+
+  .smallHeading {
+    color: #001838;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom:10px;
+  }
+
+  .smallPara {
+    color: #546172;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    padding: 15px 45px;
+    color: #fff;
+    background: #c19752;
+    border: 2px solid #c19752;
+    cursor: pointer;
+    font-size: 17.5px;
+    width: 50%;
+    /* Add any additional button styles here */
+  }
+  .button:hover {
+    background-color: #001838;
+    border: 2px solid #fff;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100%;
+   align-items: center;
+  }

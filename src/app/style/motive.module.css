@@ -1,0 +1,181 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 1263px;
+  margin: auto;
+  width: 100%;
+}
+
+.left {
+  padding: 2rem;
+  padding-left: 0;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .left{
+    width: 100%;
+  }
+}
+
+
+.left img {
+  width: 100%;
+}
+
+.right {
+  position: relative;
+  /* background-color: red; */
+}
+
+.image1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 600px) {
+  .image1{
+    width: 100%;
+  }
+}
+
+.image1 img {
+  width: 250px;
+}
+@media (max-width: 600px) {
+  .image1 img{
+    width: 35%;
+    margin-left: 55%;
+    margin-top: 15%;
+  }
+}
+
+.image2 {
+  width: 60%;
+  /* background-color: red; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.image2 img {
+  width: 100%;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.textBox h1 {
+  color: #000;
+
+  max-width: 500px;
+  font-size: 45px;
+}
+
+.textBox img {
+  max-width: 300px;
+}
+
+.textBox button {
+  margin-top: 2rem;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #000, green);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 600px) {
+  .textBox button{
+    width: 55%;
+    height: 45px;
+    font-size: 15px;
+    /* margin: 10px 0px 0px 80px; */
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .buttonbox{
+    height: 50px;
+  }
+  .container {
+    grid-gap: 0.8rem;
+    overflow-x: hidden;
+    max-width: 1263px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    padding: 5px 20px;
+    overflow: hidden;
+  }
+
+  .left img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+
+  }
+
+  .right {
+    position: relative;
+    width: 100%;
+    /* background-color: red; */
+  }
+
+
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  @media (max-width: 600px) {
+    .textBox{
+      width: 100%;
+    }
+  }
+
+  .textBox h1 {
+    color: #000;
+    height: 55%;
+    width: 100%;
+    font-size: 28px;
+    max-width: 500px;
+    font-size: 45px;
+  }
+  @media (max-width: 600px) {
+    .textBox h1{
+      font-size: 24px;
+      width: 100%;
+      /* margin-left: 10%; */
+      text-align: center;
+    }
+  }
+
+  .textBox img {
+    max-width: 300px;
+  }
+  @media (max-width: 600px) {
+    .textBox img{
+      /* padding: 10px; */
+      /* margin-left: 8%; */
+      width: 90%;
+    }
+  }
+
+
+}

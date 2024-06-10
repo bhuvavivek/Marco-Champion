@@ -1,0 +1,88 @@
+
+.main2{
+    bottom: -4rem !important;
+}
+.hero{
+    height: 700px;
+    background-color: rgba(0, 24, 56,1);
+    background-size: cover;
+    background-position: 50%;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+
+}
+.tvShow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.tvShow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(https://www.edmylett.com/_next/static/media/tvShows_gradient.b1db1d39.png) center/cover;
+    z-index: 1;
+}
+.mainHero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 50px;
+    z-index: 2;
+    width: 100%;
+
+}
+.left ,.right{
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.left img{
+    width: 70%;
+
+}
+.right img{
+    width: 100%;
+}
+.watch{
+    display: flex;
+   align-self: baseline;
+   margin-top: 60px;
+
+}
+.watch button{
+    color: #c19752;
+    background-color: transparent;
+    border: 2px solid #c19752;
+    padding: 15px 45px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.watch button:hover{
+    color: #fff;
+    background: #c19752;
+    border: 2px solid #c19752;
+    cursor: pointer;
+}
+.container{
+    position: relative;
+}
+
+
+

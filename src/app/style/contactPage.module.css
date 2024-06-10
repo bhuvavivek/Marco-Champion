@@ -1,0 +1,346 @@
+.hero {
+  background: url(../../../public/images/contactus1.png) no-repeat center bottom;
+  /* background-size: 58% auto; */
+}
+
+.hero::before {
+  content: "";
+  /* background: linear-gradient(179.1deg,rgba(0,24,56,0) .78%,#001838 87.76%); */
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.heroMain {
+  position: relative;
+}
+
+.heroMain button {
+  position: absolute;
+  bottom: 12rem;
+  background: transparent;
+  padding: 15px 40px;
+  color: #c19752;
+  background-color: transparent;
+  border: 2px solid #c19752;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.heroMain button:hover {
+  color: #fff;
+  background: #c19752;
+  border: 2px solid #c19752;
+}
+
+.textBox {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 35px 24px;
+  background: #fff;
+  box-shadow: 0 16rem 30rem -8rem rgba(8, 34, 69, 0.2);
+  width: 80%;
+  z-index: 2;
+  max-width: 1269px;
+
+  bottom: -5rem;
+}
+
+.textBox h3 {
+  text-align: center;
+  padding-inline: 7rem;
+  color: #546172;
+  font-size: 19px;
+  letter-spacing: 0.03rem;
+  font-weight: 500;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1269px;
+  margin: auto;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.left {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  background: url(https://www.edmylett.com/_next/static/media/background.f46fb087.png) center;
+}
+
+.left img {
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 681px) {
+  .mainHero {
+    max-height: 80vh;
+  }
+
+  .hero {
+    background-position: 40% top;
+  }
+
+  .heroMain {
+    position: relative;
+  }
+
+  .heroMain button {
+    padding: 15px 40px;
+    font-size: 15px;
+  }
+
+  .textBox {
+    bottom: -4rem;
+    padding: 25px 5px;
+    width: 90%;
+  }
+
+  .textBox h3 {
+    padding-inline: 0.5rem;
+    font-size: 16px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .left img {
+    padding-top: 3rem;
+    width: 80%;
+  }
+}
+
+.ContaintWrapper {
+  flex-grow: 1;
+  margin-top: 120px;
+}
+
+.mainHero {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100%;
+  max-height: 100%;
+  position: relative;
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  max-width: 800px;
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #141414;
+  box-sizing: border-box;
+  box-shadow: 0 16rem 30rem -8rem rgba(8, 34, 69, 0.2);
+  color: white;
+  gap: 30px;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.FieldWraper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.NameInputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.NameInputs div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.subjectOptions {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 6px;
+  gap: 3px;
+}
+
+.contactForm span {
+  color: #851f0b;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+@media (max-width:600px) {
+  .contactForm span{
+    font-size: 14px;
+  }
+}
+
+.InputTextFields {
+  width: 100%;
+  text-align: start;
+  height: 40px;
+  background-color: #2D2D2C;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.textarea {
+  width: 100%;
+  text-align: start;
+  height: 160px;
+  background-color: #2D2D2C;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+
+
+.contactForm h1 {
+  font-weight: 400;
+  font-size: 23px;
+}
+@media (max-width:600px) {
+  .contactForm h1{
+    font-size: 14px;
+  }
+}
+
+.formFontStyle {
+  font-size: 18px !important;
+}
+@media (max-width:600px) {
+  .formFontStyle{
+    font-size: 14px!important;
+  }
+}
+
+.SubmitButtonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.submitButton {
+  padding: 15px 60px;
+  background-color: #00BF63;
+  font-size: medium;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+.champWeekWrapper {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/homebio.png);
+  height: 480px;
+}
+
+.champweek {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.champweek img {
+  height: 130px;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .champweek img {
+    width: 100%;
+  }
+}
+
+.champweek h1 {
+  color: white;
+  font-family: bold;
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  .champweek h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.champweek input {
+  border: none;
+  outline: none;
+  background-color: white;
+  text-align: center;
+  height: 50px;
+  width: 500px;
+  font-size: 18px;
+  margin-top: 46px;
+}
+
+@media (max-width: 600px) {
+  .champweek input {
+    width: 90%;
+  }
+}
+
+.champweek button {
+  height: 45px;
+  width: 200px;
+  background-color: #C79A5C;
+  margin-top: 30px;
+  color: #373747;
+  font-size: 18px;
+  font-weight: 500;
+}

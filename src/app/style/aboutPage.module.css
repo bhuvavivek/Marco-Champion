@@ -1,0 +1,358 @@
+.aboutSection {
+  position: sticky;
+  background: #F0F0F2 !important;
+  padding-top: 64px;
+}
+
+/*---------------------- Update HD -----------------------------*/
+@media (max-width:600px) {
+  .aboutSection {
+    margin-top: -30%;
+  }
+}
+
+.heroImg {
+  /* width: 600px; */
+  margin: auto;
+}
+
+
+.aboutMain {
+  max-width: 1263px;
+  margin: auto;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.heroMain {
+  /* min-height: 860rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  /* padding-bottom: 25px; */
+  z-index: 10;
+  height: 100%;
+  /* background: #F0F0F2 !important; */
+}
+
+
+.Marcoimg {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+.Marcoimg img {
+  width: 160%;
+  bottom: 0rem;
+  position: absolute;
+}
+
+
+@media (max-width:1600px) {
+  .Marcoimg img {
+    width: 140%;
+  }
+}
+
+@media (min-width:1100px) and (max-width:1400px) {
+  .AboutHeader {
+    font-size: 2rem !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+@media (max-width:1100px) {
+  .Marcoimg {
+    display: none !important;
+  }
+
+  .MarcoStoryImage {
+    display: flex !important;
+    justify-content: center;
+    bottom: -5px;
+    position: relative;
+  }
+
+  .MarcoStoryImage img {
+    height: 350px;
+  }
+}
+
+.MarcoStoryImage {
+  display: none;
+}
+
+
+.HeroMain {
+  max-width: 1440px;
+  margin: 0px auto;
+
+}
+
+.aboutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/homebio.png);
+  display: flex;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  width: 100%;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  overflow: hidden;
+}
+
+/*--------------------------- update by HD ----------------------------*/
+@media (max-width:600px) {
+  .hero {
+    background: transparent;
+    display: flex;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    overflow: hidden;
+  }
+}
+
+.hero img {
+  height: 100%;
+
+}
+
+
+
+.banner {
+  /* padding: 3r  em 50rem; */
+  background-color: white;
+  position: absolute;
+  bottom: -75px;
+  width: 80%;
+  max-width: 1280px;
+  justify-content: center;
+  /* display: flex; */
+  text-align: center;
+  padding: 3rem
+}
+
+/*----------------------- update by HD ----------------------*/
+@media (max-width: 600px) {
+  .banner {
+    width: 80%;
+    height: 10%;
+    padding: 20px;
+    position: absolute;
+    top: 70%;
+    /* margin-top: -80px; */
+  }
+}
+
+
+.banner h1 {
+  position: relative;
+  z-index: 10;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 20px;
+    margin-top: 20%;
+  }
+}
+
+.banner img {
+  display: block;
+  position: absolute;
+  height: 130%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .banner img {
+    margin-top: -5%;
+  }
+}
+
+.heroText {
+  font-size: 49px;
+  text-align: center;
+  color: rgb(27, 20, 20);
+  text-transform: uppercase;
+  position: absolute;
+  /* padding-inline: 58px; */
+  /* width: 100%; */
+  margin-top: 23rem;
+  bottom: 3rem;
+}
+
+.heroSmallText {
+  color: white;
+  text-align: center;
+  position: absolute;
+  text-transform: capitalize;
+  bottom: 12rem;
+}
+
+.images {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.aboutHero {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  position: absolute;
+  bottom: -9rem;
+}
+
+.images img {
+  width: 100%;
+}
+
+.aboutImage {
+  max-width: 200px;
+  /* max-height: 240px; */
+  overflow: hidden;
+}
+
+.aboutBg {
+  background: #F0F0F2 !important;
+  margin-top: 0rem;
+}
+
+.aboutHead {
+  color: #001838 !important;
+  font-weight: 700 !important;
+}
+
+.aboutPara {
+  color: black !important;
+}
+
+.btn {
+  display: block;
+}
+
+@media screen and (max-width: 681px) {
+
+
+  .heroText {
+    font-size: 20px;
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  .heroSmallText {
+    color: white;
+    text-align: center;
+    position: absolute;
+    text-transform: capitalize;
+    bottom: 12rem;
+  }
+
+  .images {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .aboutHero {
+    width: 80%;
+    background-color: red;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .about {
+    position: absolute;
+    bottom: -9rem;
+  }
+
+  .images img {
+    width: 100%;
+  }
+
+  .aboutImage {
+    max-width: 100px;
+    /* max-height: 240px; */
+    overflow: hidden;
+  }
+
+  .aboutBg {
+    background: transparent !important;
+    margin-top: -5rem;
+    z-index: 50;
+  }
+
+  .aboutHead {
+    color: #001838 !important;
+    font-weight: 700 !important;
+  }
+
+  .aboutPara {
+    color: black !important;
+  }
+
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.startUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.startUp img {
+  /* width: 100%; */
+  /* object-fit: cover; */
+  /* max-width: 1269px; */
+  width: 100%;
+  max-width: 1440px;
+}
+
+.headimgSHM {
+  margin-top: -120%;
+  width: 120%;
+}

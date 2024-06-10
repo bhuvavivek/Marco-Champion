@@ -1,0 +1,201 @@
+.about {
+    padding: 80px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/homebio.png);
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    z-index: 0;
+
+}
+
+.Ed {
+    width: 100%;
+    flex: 1;
+}
+
+.Edimg {
+    flex: 1;
+    width: 50%;
+    position: relative;
+
+}
+
+.Edimg img {
+    width: 125%;
+    bottom: 0rem;
+    position: absolute;
+}
+
+
+.Ed h1 {
+    padding-bottom: 60px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+
+}
+
+.Ed p {
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0.04rem;
+    line-height: 1.5rem;
+
+}
+
+
+
+.Ed button {
+    margin-top: 30px;
+    background: transparent;
+    border: 2px solid #c19752;
+    padding: 15px;
+    font-size: 17.6px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 7rem;
+    color: #c19752;
+}
+
+.Ed button:hover {
+    background: #c19752;
+    color: #fff;
+}
+
+.Social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding-block: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.Social img {
+    width: 91px;
+
+
+}
+
+.aboutMain {
+    width: 100%;
+    max-width: 1263px;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+@media (max-width:600px) {
+    .aboutMain{
+        margin-top: -15%;
+        z-index: 999;
+        background-color: transparent;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .about {
+        padding: 30px 15px 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        max-width: 100%;
+        position: relative;
+        z-index: -1;
+    }
+
+    .Ed {
+        width: 100%;
+        flex: 1;
+    }
+
+    .Edimg {
+        flex: 1;
+        width: 50%;
+        display: none;
+    }
+
+    .Edimg img {
+        width: 100%;
+        position: static;
+    }
+
+    .Ed h1 {
+        padding-bottom: 15px;
+        padding-top: 10px;
+        font-size: 1.8rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .socialmaincontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .socialImage {
+        position: relative;
+        bottom: -5px;
+    }
+
+    .socialImage img {
+        width: 100%;
+        height: 350px;
+    }
+
+
+
+    .Ed p {
+        color: #fff;
+        font-weight: 200;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: normal;
+
+    }
+
+    .Ed button {
+        margin-top: 30px;
+        border: 1.5px solid #c19752;
+        padding: 15px;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .Social {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+        padding: 5px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .Social img {
+        width: 15%;
+    }
+
+    .aboutMain {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .socialImage {
+        display: none;
+    }
+}
