@@ -1,5 +1,4 @@
 .showMain {
-  padding-top: 12.5rem;
   padding-bottom: 1.5rem;
   box-sizing: border-box;
   padding-right: 10px;
@@ -29,8 +28,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 @media (max-width: 600px) {
-  .lastPodcast h1{
+  .lastPodcast h1 {
     font-size: 22px;
   }
 }
@@ -48,12 +48,11 @@
 
 .newslater input {
 
-
   padding-block: 17px;
 
   font-size: 17px;
   width: 100%;
-  min-width: 500px;
+  max-width: 500px;
   border: none;
   background-color: #fff;
   text-align: center;
@@ -274,8 +273,9 @@
   letter-spacing: 4px;
   font-weight: 600;
 }
+
 @media (max-width:600px) {
-  .subHeading{
+  .subHeading {
     font-size: 18px !important;
   }
 }

@@ -4,33 +4,27 @@ import styles from "../style/footer.module.css";
 
 const footerSocial = [
   {
+    link: "https://www.linkedin.com/in/edwardburnsjr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    img: "	/images/Youtube.png",
+    name: "youtube",
+    followers: 2.25,
+  },
+  {
     link: "https://www.instagram.com/dr.edwardburnsjr?igsh=ODA1NTc5OTg5Nw==",
-    img: "/images/instagram2.svg",
+    img: "/images/instagram2.png",
     name: "Instagram",
     followers: 2.25,
   },
   {
     link: "https://www.tiktok.com/@dr.edwardburns?_t=8iavjpZ8fPi&_r=1",
-    img: "	https://www.edmylett.com/icons/footer/tiktok.svg",
+    img: "/images/tiktok.png",
     name: "TikTok",
     followers: 2.25,
   },
   {
     link: "https://www.facebook.com/profile.php?id=100084015300138&mibextid=LQQJ4d",
-    img: "		https://www.edmylett.com/icons/footer/facebook.svg",
+    img: "/images/facebook.png",
     name: "Facebook",
-    followers: 2.25,
-  },
-  {
-    link: "https://www.linkedin.com/in/edwardburnsjr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    img: "	/images/linkdin.svg",
-    name: "linkedin",
-    followers: 2.25,
-  },
-  {
-    link: "https://x.com/edwardburnsjr27/",
-    img: "	/images/twitter.svg",
-    name: "Twitter",
     followers: 2.25,
   },
 ];
@@ -113,7 +107,7 @@ const Footer = () => {
 
       <div style={{ background: "#000" }}>
 
-        <div className={styles.container} style={{ maxWidth: "1440px", margin: "0px auto" }}>
+        <div className={styles.container} style={{ maxWidth: "1300px", margin: "0px auto" }}>
 
           <div className={`${styles.left}`}>
             <h1 className="blanka">STAY MOTIVATED</h1>
@@ -121,13 +115,13 @@ const Footer = () => {
               {footerSocial?.map((item, i) => (
                 <li key={i}>
                   <Link href={item.link}>
-                    <img src={item.img} alt="" />
+                    <img src={item.img} alt="" height='50px' width='50px' />
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          
+
           <div>
             <ul className={styles.links}>
               <li className="sprite-graffiti">MY STORY</li>

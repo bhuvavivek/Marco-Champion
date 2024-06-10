@@ -266,7 +266,7 @@
 }
 
 .left ul {
-  padding: 0 auto;
+  padding: 0px;
 }
 
 @media (max-width: 600px) {

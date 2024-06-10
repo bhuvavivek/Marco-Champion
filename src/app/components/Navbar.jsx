@@ -63,7 +63,7 @@ const Navbar = () => {
               className={`link sprite-graffiti ${pathname === "/story" ? "active" : ""}`}
               href="/story"
             >
-              Story
+              My Story
             </Link>
             <Link
               className={`link sprite-graffiti ${pathname === "/Reprogram" ? "active" : ""}`}
@@ -77,7 +77,7 @@ const Navbar = () => {
               className={`link sprite-graffiti ${pathname === "/biz" ? "active" : ""}`}
               href="/biz"
             >
-              Biz
+              Shop
             </Link>
             <Link
               className={`link sprite-graffiti ${pathname === "/contact" ? "active" : ""}`}
@@ -109,7 +109,7 @@ const Navbar = () => {
               className={`link sprite-graffiti ${pathname === "/story" ? "active" : ""}`}
               href="/story"
             >
-              Story
+              My Story
             </Link>
           </div>
 
@@ -137,7 +137,7 @@ const Navbar = () => {
               className={`link sprite-graffiti ${pathname === "/biz" ? "active" : ""}`}
               href="/biz"
             >
-              Biz
+              Shop
             </Link>
           </div>
           <div>

@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 import styles from "../style/home.module.css";
 import styles2 from "../style/shopPage.module.css";
 
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -46,7 +46,8 @@ const Page = () => {
 
         {/*------------------------------------------- Header poster ------------------------------------------- */}
         <div className={styles2.ShopHeroSection}>
-          {!isSmallScreen ? <img src="/images/Shop-Hero.png" alt="" width='100%' /> : <img src="/images/Shop-Hero.svg" alt="" width='100%' />}
+          {!isSmallScreen && <img src="/images/Shop-Hero.png" alt="" width='100%' />}
+          {isSmallScreen && <img src="/images/Shop-Hero-PC.png" />}
           <p className={styles2.heading}>
             “IF YOU WANT TO CHANGE THE WORLD, <br />
             MAKE DOING THE RIGHT THING <br />
@@ -58,9 +59,9 @@ const Page = () => {
         {/*------------------------------------------- my business part ------------------------------------------- */}
         <div className={styles2.brands}>
           <h2>MY BUSINESSES</h2>
-          { !isSmallScreen ?
+          {!isSmallScreen ?
             (
-              <div style={{marginTop:"-100px"}}>
+              <div style={{ marginTop: "-100px" }}>
                 <Carousel controls={false}>
                   <Carousel.Item interval={2000}>
                     <img src="/images/brand_1.svg" alt="......" className="p-3" />

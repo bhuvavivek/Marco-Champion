@@ -8,9 +8,8 @@ const WinnerCirlce = () => {
     <>
       <div className={styles.container}>
         <div className={styles.containerMain}>
-          <h1 className="colorPrimary blanka">Winners Circle</h1>
 
-          <div className={styles.circle}>
+          <div className={styles.circle} >
             <div className={styles.circles}>
               <Link href="/Reprogram" className={styles.lavel1}>
                 <div className={styles.circleInner}>
@@ -36,6 +35,10 @@ const WinnerCirlce = () => {
                 </div>
               </div>
             </div>
+            <div style={{
+              position: 'absolute',
+              top: '-145px',
+            }}><img src="/images/Winner-Circle.png" alt="" height='800px' /></div>
           </div>
 
           <div className={styles.BottomImg}>

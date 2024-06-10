@@ -2,9 +2,11 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/homebio.png);
   padding: 80px 50px;
+  padding-top: 120px;
   text-align: center;
   position: relative;
 }
+
 .container h1 {
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -45,7 +47,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.lavel1:hover{
+.lavel1:hover {
   scale: 1.02;
 }
 
@@ -67,11 +69,12 @@
   transition: all 0.5s ease-in-out;
 }
 
-.lavel2:hover{
+.lavel2:hover {
   scale: 1.02;
   /* width: 75%;
   height: 75%; */
 }
+
 .lavel3 {
   width: 40%;
   height: 40%;
@@ -104,6 +107,7 @@
 .circleInner {
   padding: 20px;
 }
+
 .text {
   font-size: 20px;
   text-transform: uppercase;
@@ -127,6 +131,7 @@
   .container {
     padding: 20px 15px;
   }
+
   .container h1 {
     font-size: 2rem;
   }
@@ -167,7 +172,7 @@
   position: absolute;
   bottom: 0rem;
   right: 0;
- 
+
 }
 
 .BottomImg img {

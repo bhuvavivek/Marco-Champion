@@ -17,37 +17,37 @@ const CEO = () => {
   ];
 
   const MotivImages = [
-    '/images/Story11.png',
-    '/images/Story22.png',
-    '/images/Story33.png',
+    '/images/story/CEO-of-MOTIV-1.png',
+    '/images/story/CEO-of-MOTIV-2.png',
+    '/images/story/CEO-of-MOTIV-3.png',
   ]
 
   const EnterPreneurImage = [
-    '/images/Story11.png',
-    '/images/Story33.png',
-    '/images/Story22.png',
+    '/images/story/Serial-1.png',
+    '/images/story/Serial-2.png',
+    '/images/story/Serial-3.png',
   ]
 
   const MindHackingImage = [
-    '/images/Story22.png',
-    '/images/Story11.png',
-    '/images/Story33.png',
+    '/images/story/Mind-1.png',
+    '/images/story/Mind-2.png',
+    '/images/story/Mind-3.png',
   ]
 
   const SpeakerImage = [
-    '/images/Story33.png',
-    '/images/Story11.png',
-    '/images/Story22.png',
+    '/images/story/speaker-1.png',
+    '/images/story/speaker-2.png',
+    '/images/story/speaker-3.png',
   ]
   const AthleteImage = [
-    '/images/Story33.png',
-    '/images/Story22.png',
-    '/images/Story11.png',
+    '/images/story/Athlete-1.png',
+    '/images/story/Athlete-2.png',
+    '/images/story/Athlete-3.png',
   ]
   const HumanImage = [
-    '/images/Story33.png',
-    '/images/Story11.png',
-    '/images/Story22.png',
+    '/images/story/Human-1.png',
+    '/images/story/Human-2.png',
+    '/images/story/Human-3.png',
   ]
 
   const ImagesList = [

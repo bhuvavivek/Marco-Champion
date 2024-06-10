@@ -4,8 +4,6 @@ import styles from "../style/aboutEd.module.css";
 
 const AboutEd = ({ isWhiteBG, isHeadingColor }) => {
 
-
-
   return (
     <div className={`${styles.about}`}>
       <div className={styles.aboutMain}>
@@ -13,7 +11,7 @@ const AboutEd = ({ isWhiteBG, isHeadingColor }) => {
         <div className={styles.Ed}>
           <h1
             className={`colorPrimary`}
-          ><br/>
+          ><br />
             WHO IS MARCO CHAMPION?</h1>
           <p >
             Growing up, I fell in love with skateboarding and all the adversity
@@ -60,7 +58,7 @@ const AboutEd = ({ isWhiteBG, isHeadingColor }) => {
           <div className={`${styles.socialmaincontainer}`}>
 
 
-            <div className={`${styles.Social}`}>
+            {/* <div className={`${styles.Social}`}>
               <img
                 src={"/images/Forbes2.svg"}
                 alt=""
@@ -83,7 +81,7 @@ const AboutEd = ({ isWhiteBG, isHeadingColor }) => {
                 src={"/images/Money.svg"}
                 alt=""
               />
-            </div>
+            </div> */}
 
             <div className={styles.socialImage}>
               <img src="/images/about.png" alt="" />

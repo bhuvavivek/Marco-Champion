@@ -1,22 +1,21 @@
 "use client";
 
-import { lazy, useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { lazy, useEffect, useState } from "react";
 import styles from "./style/home.module.css";
+import styles2 from "./style/shopPage.module.css";
 
 import WinnerCirlce from "./components/WinnerCircle";
 
 import AboutEd from "./components/AboutEd";
-import Books from "./components/Books";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Show from "./components/Show";
 
-import SocialBox from "./components/SocialBox";
 const Media = lazy(() => import("./components/Media"));
 const Work = lazy(() => import("./components/Work"));
 
-import Motive from "./components/Motive";
+import HomeSocialBox from './components/HomeSocialBoX';
 import Navigation from "./components/Navigation";
 import Popup1 from "./components/popup/Popup1";
 
@@ -59,19 +58,26 @@ export default function Home() {
         </div>
         <div className={styles.hero}>
           <div className={styles.heroMain}>
-            <img src="/images/HomePage2.png" alt="" />
+            <img src="/images/HomePage2.svg" alt="" width="100%" />
           </div>
         </div>
-        <SocialBox />
+
       </div>
 
       <Show />
       <AboutEd />
-      <Books />
+      {/* <Books /> */}
+      <div className={styles2.community}>
+        <h2>MARCO CHAMPION</h2>
+        <h1>TEXT COMMUNITY </h1>
+        <h3>TEXT ME FOR 1 ON 1 CONVERSATIONS</h3>
+        <input type="text" placeholder="PHONE #" width='100%' />
+        <button>JOIN COMMUNITY NUMBER</button>
+      </div>
       {/* <Media /> */}
       <WinnerCirlce />
       {/* <Work /> */}
-      <Motive />
+      <HomeSocialBox />
       {popupOpen && <Popup1 setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
 
       <Footer />

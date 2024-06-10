@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import Navigation from "../components/Navigation";
+import PopUp2 from "../components/popup/Popup2";
 import styles2 from "../style/matrix.module.css";
 
 const footerSocial = [
@@ -35,7 +39,13 @@ const footerSocial = [
   },
 ];
 
-const page = () => {
+const Matrix = () => {
+
+  const [popup, setPopup] = useState()
+  const handleOpenPopup = () => setPopup(true)
+  const handleClosePopup = () => setPopup(false)
+
+
   return (
     <>
       <div
@@ -45,10 +55,13 @@ const page = () => {
       >
         <Navigation />
         <div className={styles2.matrixVideo}>
-          <div className={styles2.GIFVideo}>
+          <div className={styles2.GIFVideo} onClick={handleOpenPopup} style={{
+            cursor: 'pointer'
+          }}>
             <img src="/images/Matrix-Thumbnail.gif" alt="" />
           </div>
         </div>
+
 
         {/* Footer Code  */}
         <div style={{ background: "#000" }}>
@@ -78,8 +91,10 @@ const page = () => {
           </div>
         </div>
       </div>
+
+      {popup && <PopUp2 closePopup={handleClosePopup} popupOpen={popup} />}
     </>
   );
 };
 
-export default page;
+export default Matrix;
