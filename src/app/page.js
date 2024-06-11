@@ -10,12 +10,12 @@ import WinnerCirlce from "./components/WinnerCircle";
 import AboutEd from "./components/AboutEd";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import HomeSocialBoX from './components/HomeSocialBoX';
 import Show from "./components/Show";
 
 const Media = lazy(() => import("./components/Media"));
 const Work = lazy(() => import("./components/Work"));
 
-import HomeSocialBox from './components/HomeSocialBoX';
 import Navigation from "./components/Navigation";
 import Popup1 from "./components/popup/Popup1";
 
@@ -77,7 +77,7 @@ export default function Home() {
       {/* <Media /> */}
       <WinnerCirlce />
       {/* <Work /> */}
-      <HomeSocialBox />
+      <HomeSocialBoX />
       {popupOpen && <Popup1 setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
 
       <Footer />
