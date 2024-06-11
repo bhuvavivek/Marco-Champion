@@ -15,9 +15,9 @@ import Show from "./components/Show";
 const Media = lazy(() => import("./components/Media"));
 const Work = lazy(() => import("./components/Work"));
 
-import HomeSocialBox from './components/HomeSocialBoX';
 import Navigation from "./components/Navigation";
 import Popup1 from "./components/popup/Popup1";
+import SocialBox2 from './components/SocialBox2';
 
 
 export default function Home() {
@@ -77,7 +77,7 @@ export default function Home() {
       {/* <Media /> */}
       <WinnerCirlce />
       {/* <Work /> */}
-      <HomeSocialBox />
+      <SocialBox2 />
       {popupOpen && <Popup1 setPopupOpen={setPopupOpen} popupOpen={popupOpen} />}
 
       <Footer />

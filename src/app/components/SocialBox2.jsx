@@ -12,7 +12,7 @@ const socialDetail = [
     { image: "/images/facebook.svg", socialName: "Facebook", followers: "2.6M" },
     { image: "/images/twitter.svg", socialName: "Twitter", followers: "2.6M" },
 ];
-const HomeSocialBox = () => {
+const SocialBox2 = () => {
     return (
         <div
             style={{
@@ -46,4 +46,4 @@ const HomeSocialBox = () => {
     );
 };
 
-export default HomeSocialBox;
+export default SocialBox2;
