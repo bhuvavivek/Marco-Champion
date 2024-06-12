@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "../style/home.module.css";
 
 const socialDetail = [
@@ -32,7 +31,7 @@ const SocialBox2 = () => {
                     >
                         {socialDetail.map((social, index) => (
                             <div className={styles.SocialBox} key={index}>
-                                <Image src={social.image} alt={social?.name || 'description of the image'} />
+                                <img src={social.image} alt={social?.name || 'description of the image'} />
                                 <div className={styles.socialName}>
                                     <h4>{social.socialName}</h4>
                                     {/* <h6>{social.followers} Follwers</h6> */}

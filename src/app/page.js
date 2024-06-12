@@ -58,7 +58,10 @@ export default function Home() {
         </div>
         <div className={styles.hero}>
           <div className={styles.heroMain}>
-            <img src="/images/HomePage2.svg" alt="" width="100%" />
+            <img src="/images/HomePage3.png" alt="" width="100%" style={{
+              height: '100%',
+              maxHeight: '733px'
+            }} />
           </div>
         </div>
 
