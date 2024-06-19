@@ -55,7 +55,7 @@ const FAQ = () => {
         fontSize: '40px',
         fontFamily: 'Blanka !important',
         color: 'white'
-      }} className={styles.heading}>FAQ's</h2>
+      }} className={styles.heading}>FAQs</h2>
 
       <div className={styles.container}>
         <section className={styles.faq}>
