@@ -41,7 +41,9 @@ const About = () => {
         }}
       >
 
-        <div className={styles2.aboutSection}>
+        <div className={styles2.aboutSection} style={{
+          marginTop: '60px'
+        }}>
           <AboutBio isWhiteBG={true} isHeadingColor={true} />
         </div>
         {/* <EdStory />

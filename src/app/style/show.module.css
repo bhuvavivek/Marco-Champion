@@ -1,5 +1,5 @@
 .showMain {
-  padding-bottom: 1.5rem;
+  padding-bottom: 40px;
   box-sizing: border-box;
   padding-right: 10px;
   padding-left: 10px;
@@ -37,7 +37,6 @@
 
 .lastPodcast h3 {
   font-size: 28px;
-  line-height: 3rem;
   color: #000;
   margin-top: 2rem;
 }
@@ -48,11 +47,10 @@
 
 .newslater input {
 
-  padding-block: 17px;
+  padding-block: 14px;
 
-  font-size: 17px;
-  width: 100%;
-  max-width: 500px;
+  font-size: 16px;
+  width: 630px;
   border: none;
   background-color: #fff;
   text-align: center;
@@ -67,12 +65,13 @@
   background: #c19752;
   border: 2px solid #c19752;
   padding-inline: 40px;
-  padding-block: 15px;
-  font-size: 17px;
+  padding-block: 10px;
+  font-size: 16px;
   cursor: pointer;
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 20px;
+  width: 250px;
 }
 
 .lastPodcast button:hover {
@@ -116,7 +115,7 @@
   justify-content: center;
   gap: 30px;
   padding: 0 50px;
-  margin-top: 40px;
+  margin-top: 20px;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -216,7 +215,7 @@
 
   .lastPodcast h3 {
     font-size: 20px;
-    line-height: normal;
+    line-height: normal
   }
 
   .lastPodcast button {
@@ -270,8 +269,8 @@
 .subHeading {
   font-size: 1.38rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
   font-weight: 600;
+  font-weight: bold;
 }
 
 @media (max-width:600px) {

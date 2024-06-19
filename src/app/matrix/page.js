@@ -4,37 +4,32 @@ import Link from "next/link";
 import { useState } from "react";
 import Navigation from "../components/Navigation";
 import PopUp2 from "../components/popup/Popup2";
+import styles from "../style/footer.module.css";
 import styles2 from "../style/matrix.module.css";
 
 const footerSocial = [
   {
-    link: "https://www.instagram.com/dr.edwardburnsjr?igsh=ODA1NTc5OTg5Nw==",
-    img: "/images/instagram2.svg",
+    link: "https://youtube.com/@marcothechampion?si=Q9wKW7O1zjUNI-Tf",
+    img: "	/images/Youtube.png",
+    name: "youtube",
+    followers: 2.25,
+  },
+  {
+    link: "https://www.instagram.com/marcothechampion?igsh=MzRlODBiNWFlZA==",
+    img: "/images/instagram2.png",
     name: "Instagram",
     followers: 2.25,
   },
   {
-    link: "https://www.tiktok.com/@dr.edwardburns?_t=8iavjpZ8fPi&_r=1",
-    img: "	https://www.edmylett.com/icons/footer/tiktok.svg",
+    link: "https://www.tiktok.com/@marcothechampion?_t=8l4fMYzpcVP&_r=1",
+    img: "/images/tiktok.png",
     name: "TikTok",
     followers: 2.25,
   },
   {
-    link: "https://www.facebook.com/profile.php?id=100084015300138&mibextid=LQQJ4d",
-    img: "		https://www.edmylett.com/icons/footer/facebook.svg",
+    link: "https://www.facebook.com/marcochampion777?mibextid=JRoKGi",
+    img: "/images/facebook.png",
     name: "Facebook",
-    followers: 2.25,
-  },
-  {
-    link: "https://www.linkedin.com/in/edwardburnsjr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    img: "	/images/linkdin.svg",
-    name: "linkedin",
-    followers: 2.25,
-  },
-  {
-    link: "https://x.com/edwardburnsjr27/",
-    img: "	/images/twitter.svg",
-    name: "Twitter",
     followers: 2.25,
   },
 ];
@@ -68,17 +63,18 @@ const Matrix = () => {
           <div className={styles2.footerContainer}>
             <div className={styles2.y}>
               <h1 className="blanka">STAY MOTIVATED</h1>
-              <ul className={styles2.socialLinks}>
+              <ul className={styles.socialLinks} style={{
+                padding: '0px'
+              }}>
                 {footerSocial?.map((item, i) => (
                   <li key={i}>
-                    <Link href={item.link}>
-                      <img src={item.img} alt="" />
+                    <Link href={item.link} target="_blank">
+                      <img src={item.img} alt="" height='50px' width='50px' />
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
-            {/* right part */}
             <div className={styles2.right}>
               <a href="/Reprogram" style={{
                 textDecoration: "none",
@@ -87,7 +83,6 @@ const Matrix = () => {
                 <h1 className="blanka">REPROGRAM</h1>
               </a>
             </div>
-            <div></div>
           </div>
         </div>
       </div>

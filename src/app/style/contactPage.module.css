@@ -203,8 +203,9 @@
   font-style: italic;
   font-size: 1.2rem;
 }
+
 @media (max-width:600px) {
-  .contactForm span{
+  .contactForm span {
     font-size: 14px;
   }
 }
@@ -244,8 +245,9 @@
   font-weight: 400;
   font-size: 23px;
 }
+
 @media (max-width:600px) {
-  .contactForm h1{
+  .contactForm h1 {
     font-size: 14px;
   }
 }
@@ -253,9 +255,10 @@
 .formFontStyle {
   font-size: 18px !important;
 }
+
 @media (max-width:600px) {
-  .formFontStyle{
-    font-size: 14px!important;
+  .formFontStyle {
+    font-size: 14px !important;
   }
 }
 
@@ -336,11 +339,15 @@
 }
 
 .champweek button {
-  height: 45px;
-  width: 200px;
-  background-color: #C79A5C;
-  margin-top: 30px;
-  color: #373747;
-  font-size: 18px;
+  color: #fff;
+  background: #c19752;
+  border: 2px solid #c19752;
+  padding-inline: 40px;
+  padding-block: 14px;
+  font-size: 16px;
+  cursor: pointer;
   font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 30px;
+  width: 250px;
 }

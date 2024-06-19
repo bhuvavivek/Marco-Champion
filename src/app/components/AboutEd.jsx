@@ -44,9 +44,6 @@ const AboutEd = ({ isWhiteBG, isHeadingColor }) => {
             your entire life to experience more success in just 77 days.
           </p>
 
-          <br />
-          <br />
-
           <p>To Your Success, <br /> Marco Champion</p>
 
           <Link href="/story">

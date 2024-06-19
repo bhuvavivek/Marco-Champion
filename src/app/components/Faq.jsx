@@ -44,9 +44,20 @@ const FAQ = () => {
   };
 
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles.mainContainer} style={{
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'start',
+      alignItems: 'center'
+    }}>
+      <h2 style={{
+        textTransform: 'uppercase',
+        fontSize: '40px',
+        fontFamily: 'Blanka !important',
+        color: 'white'
+      }} className={styles.heading}>FAQ's</h2>
+
       <div className={styles.container}>
-        <h2 className={styles.heading}>FREQUENTLY ASKED QUESTIONS</h2>
         <section className={styles.faq}>
           {questions.map(item => (
             <Question key={item.id} {...item} isActive={activeId === item.id} onClick={handleClick} />
@@ -65,11 +76,16 @@ const Question = ({ id, question, answer, isActive, onClick }) => {
   return (
     <div className={styles.questionmain}>
       <div className={`${styles.question} ${styles.outerBorder}`} onClick={handleQuestionClick}>
-        <h3>{question}</h3>
+        <h3 style={{
+          marginBottom: '0px !important',
+          fontSize: '22px'
+        }}>{question}</h3>
         {isActive ? <HiArrowCircleUp className={styles.arrowIcon} /> : <HiArrowCircleDown className={styles.arrowIcon} />}
       </div>
       {isActive && (
-        <div className={styles.answer}>
+        <div className={styles.answer} style={{
+          fontSize: '18px'
+        }}>
           {answer}
         </div>
       )}

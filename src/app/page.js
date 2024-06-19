@@ -1,7 +1,7 @@
 "use client";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { lazy, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./style/home.module.css";
 import styles2 from "./style/shopPage.module.css";
 
@@ -12,10 +12,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Show from "./components/Show";
 
-const Media = lazy(() => import("./components/Media"));
-const Work = lazy(() => import("./components/Work"));
 
-import Navigation from "./components/Navigation";
+import Navigation from './components/Navigation';
 import Popup1 from "./components/popup/Popup1";
 import SocialBox2 from './components/SocialBox2';
 
@@ -49,22 +47,15 @@ export default function Home() {
     <>
       <div className={styles.mainHero}>
         <Header onClick={() => popUpHandler()} />
-        <div
-          style={{
-            background: "black",
-          }}
-        >
-          <Navigation />
-        </div>
-        <div className={styles.hero}>
-          <div className={styles.heroMain}>
-            <img src="/images/HomePage3.png" alt="" width="100%" style={{
-              height: '100%',
-              maxHeight: '733px'
-            }} />
+        <div className={styles.heromainsection}>
+          <div
+            style={{
+              background: 'transparent',
+              paddingTop: '100px'
+            }}>
+            <Navigation />
           </div>
         </div>
-
       </div>
 
       <Show />

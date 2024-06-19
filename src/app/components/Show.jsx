@@ -22,17 +22,27 @@ const Show = () => {
   return (
     <>
       <div style={{
-        background: 'url(/images/Background-Special.png)'
+        background: 'url(/images/Background-Special.png)',
+        marginTop: '-100px'
       }}>
-        <div className={styles.showMain}>
+        <div className={styles.lastPodcast} style={{
+          display: 'flex',
+          justifyContent: 'center',
+          background: 'white',
+          width: '100%',
+          paddingTop: '5px',
+        }}>
+          <h4 className="colorPrimary">
+            Become the Best Version of You with
+          </h4>
+        </div>
+        <div className={styles.showMain} >
           <div className={styles.container}>
             <div className={styles.lastPodcast}>
-              <div className="w-100 bg-white">
-                <h4 className="colorPrimary">
-                  Become the Best Version of You with
-                </h4>
-              </div>
-              <h1>The Marco Champion show</h1>
+              <h1 style={{
+                fontSize: '48px',
+                marginTop: '40px'
+              }}>The Marco Champion show</h1>
               <div className={styles.epBox}>
                 {episodes.map((ep, index) => (
                   <div className={styles.epMainBox} key={index}>
@@ -49,10 +59,18 @@ const Show = () => {
                 BE THE <span className="colorPrimary">FIRST TO KNOW</span> WHEN A
                 NEW EPISODE RELEASES
                 <br />
-                WEEKLY BTS FOOTAGE - WEEKLY WISDOM & MOTIVATION
+                <p style={{
+                  fontSize: '25px'
+                }}>WEEKLY BTS FOOTAGE - WEEKLY WISDOM & MOTIVATION</p>
               </h3>
-              <div className={styles.newslater}>
-                <input type="text" placeholder="Your Email" /> <button>Connect</button>
+              <div className={styles.newslater} style={{
+                display: 'flex',
+                flexDirection: 'column',
+                width: '100%',
+                alignItems: 'center'
+              }}>
+                <input type="text" placeholder="Your Email" />
+                <button>Connect</button>
               </div>
             </div>
           </div>

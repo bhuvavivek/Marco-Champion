@@ -49,7 +49,7 @@
 }
 
 .Marcoimg img {
-  width: 167%;
+  width: 160%;
   bottom: 0rem;
   position: absolute;
   left: -157px;
@@ -343,6 +343,7 @@
   align-items: center;
   object-fit: cover;
   background-size: cover;
+  background: url('/images/Background-Special.png');
 }
 
 .startUp img {

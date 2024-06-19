@@ -31,7 +31,7 @@
 
 .heroMain img {
   margin: 0 auto;
-  width: 100%;
+  width: 950px;
   max-width: 100%;
 }
 
@@ -92,7 +92,7 @@
   position: absolute;
   /* top: 0%; */
   max-width: 1425px;
-  bottom: -112px;
+  bottom: 50px;
 }
 
 @media (max-width: 600px) {
@@ -173,10 +173,10 @@
   align-items: center;
 }
 
-.mainHero {
+/* .mainHero {
   position: relative;
 }
-
+ */
 
 
 
@@ -348,4 +348,15 @@
   .boxmain {
     margin: 20%;
   }
+}
+
+.heromainsection {
+  height: 1000px;
+  position: relative;
+  top: -100px;
+  width: 100%;
+  background-color: brown;
+  background: url('/images/HomePage3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -47,7 +47,9 @@ const Page = () => {
         {/*------------------------------------------- Header poster ------------------------------------------- */}
         <div className={styles2.ShopHeroSection}>
           {!isSmallScreen && <img src="/images/Shop-Hero.png" alt="" width='100%' />}
-          {isSmallScreen && <img src="/images/Shop-Hero-PC.png" />}
+          {isSmallScreen && <img src="/images/Shop-Hero-PC.png" style={{
+            height: '100vh'
+          }} />}
           <p className={styles2.heading}>
             “IF YOU WANT TO CHANGE THE WORLD, <br />
             MAKE DOING THE RIGHT THING <br />

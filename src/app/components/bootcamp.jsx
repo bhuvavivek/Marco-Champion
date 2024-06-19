@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 // import styles from "../style/bootcamp.module.css";
 const items = ['/images/bootcamp_1.svg', '/images/bootcamp_2.svg', '/images/bootcamp_3.svg', '/images/bootcamp_4.svg', '/images/bootcamp_5.svg', '/images/bootcamp_6.svg'];
 
@@ -27,8 +27,11 @@ const Bootcamp = () => {
 
   return (
     <>
-    <br/><br/>
-    <h1 className='text-light text-center'>TOOLS USED IN BOOTCAMP</h1>
+      <br /><br />
+      <h1 className='text-light text-center' style={{
+        fontFamily: 'Blanka !important',
+        marginBottom: '30px'
+      }}>TOOLS USED IN BOOTCAMP</h1>
       {/* <Card className='border-0 rounded-0 bg-transparent'>
         <br /><br />
         <div className={styles.boxContainer}>
@@ -62,27 +65,27 @@ const Bootcamp = () => {
           (
             <Carousel className='text-center'>
               <Carousel.Item interval={3000}>
-                <img src='/images/bootcamp_1.svg' alt='...' className='p-4' style={{width:'100%'}} />
-                <br/><br/>
+                <img src='/images/bootcamp_1.svg' alt='...' className='p-4' style={{ width: '100%' }} />
+                <br /><br />
               </Carousel.Item>
               <Carousel.Item interval={3000}>
-                <img src='/images/bootcamp_2.svg' alt='...' className='p-4' style={{width:"100%"}} />
-                <br/><br/>
+                <img src='/images/bootcamp_2.svg' alt='...' className='p-4' style={{ width: "100%" }} />
+                <br /><br />
               </Carousel.Item>
               <Carousel.Item interval={3000}>
-                <img src='/images/bootcamp_3.svg' alt='...' className='p-4' style={{width:'100%'}}/>
-                <br/><br/>
+                <img src='/images/bootcamp_3.svg' alt='...' className='p-4' style={{ width: '100%' }} />
+                <br /><br />
               </Carousel.Item>
               <Carousel.Item interval={3000} >
-                <img src='/images/bootcamp_4.svg' alt='...' className='p-4' style={{width:'100%'}} />
-                <br/><br/>
+                <img src='/images/bootcamp_4.svg' alt='...' className='p-4' style={{ width: '100%' }} />
+                <br /><br />
               </Carousel.Item>
               <Carousel.Item interval={3000}>
-                <img src='/images/bootcamp_5.svg' alt='...' className='p-4' style={{width:'100%'}} />
-                <br/><br/>
+                <img src='/images/bootcamp_5.svg' alt='...' className='p-4' style={{ width: '100%' }} />
+                <br /><br />
               </Carousel.Item>
               <Carousel.Item interval={3000}>
-                <img src='/images/bootcamp_6.svg' alt='...' className='p-4' style={{width:'100%'}} />
+                <img src='/images/bootcamp_6.svg' alt='...' className='p-4' style={{ width: '100%' }} />
                 <br /><br />
               </Carousel.Item>
             </Carousel>

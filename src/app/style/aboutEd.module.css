@@ -1,5 +1,4 @@
 .about {
-    padding: 80px 50px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,15 +23,16 @@
 }
 
 .Edimg img {
-    width: 125%;
+    width: 110%;
     bottom: 0rem;
     position: absolute;
 }
 
 
 .Ed h1 {
-    padding-bottom: 60px;
-    font-size: 2.8rem;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -51,14 +51,14 @@
 
 
 .Ed button {
-    margin-top: 30px;
+    margin-top: 20px;
     background: transparent;
     border: 2px solid #c19752;
     padding: 15px;
     font-size: 17.6px;
     font-weight: 500;
     cursor: pointer;
-    margin-bottom: 7rem;
+    margin-bottom: 60px;
     color: #c19752;
 }
 
@@ -92,8 +92,9 @@
     justify-content: center;
     position: relative;
 }
+
 @media (max-width:600px) {
-    .aboutMain{
+    .aboutMain {
         margin-top: -15%;
         z-index: 999;
         background-color: transparent;

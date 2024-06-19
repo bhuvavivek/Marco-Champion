@@ -32,7 +32,7 @@ const page = () => {
         }}
       >
         <div className={styles2.MainWrapper}>
-          <Navigation />
+
 
           <div className={styles.mainHero} style={{
             marginTop: "60px",
@@ -44,12 +44,14 @@ const page = () => {
             >
               <Navigation />
             </div>
-            <div className={styles.hero}>
+            <div className={styles.hero} style={{
+              paddingBottom: '60px'
+            }}>
               <div className={styles.heroMain}>
                 <img src="/images/HomePage2.png" alt="" />
               </div>
+              <SocialBox />
             </div>
-            <SocialBox />
           </div>
           {/* ......................................................... after poster card code (2)......................................................... */}
           {/* <div className={styles2.sec_2}>
@@ -60,10 +62,17 @@ const page = () => {
             </h3>
           </div> */}
           <Card className="border-0 text-center rounded-0 text-light responsive_thistext" style={{ backgroundColor: "black", paddingTop: '70px' }}>
-            <div style={{ margin: "5%", fontSize: '20vh' }} className={styles.boxmain}>
-              <h1 className={styles.headerEotion}>Change your thoughts</h1>
+            <div style={{ margin: "5%", fontSize: '20vh', marginBottom: '80px' }} className={styles.boxmain}>
+              <div className={styles.headerEotion} style={{
+                textTransform: 'uppercase',
+                fontSize: '40px',
+                fontFamily: 'Blanka !important'
+              }}>Change your thoughts</div>
               <hr style={{ borderColor: "black" }} />
-              <h3 className={styles.headerEotionDesc}>
+              <h3 className={styles.headerEotionDesc} style={{
+                fontSize: "28px",
+
+              }}>
                 THOUGHT DISCONNECTED FROM EMOTION HAS NO <br /> EFFECT, EMOTION NOT
                 GUIDED BY THOUGHT IS <br />CHAOS.
               </h3>
@@ -74,7 +83,10 @@ const page = () => {
 
           {/* ......................................................... Bootcamp code code (3)......................................................... */}
           <div className={styles2.bootcamWapper}
-          // style={{background: "blue"}}
+            // style={{background: "blue"}}
+            style={{
+              padding: '30px 0'
+            }}
           >
             <Bootcamp />
           </div>

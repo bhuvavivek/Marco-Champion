@@ -42,7 +42,7 @@ const Navbar = () => {
   }
 
   return (
-    <div style={{ position: "relative", zIndex: 999 }}>
+    <div style={{ position: "relative", zIndex: 999, background: 'transparent' }}>
 
       <nav className={`${styles.navbar} ${getNavbarClass()}`}>
         <div className={getNavBarContainClass()}>

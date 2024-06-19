@@ -11,7 +11,7 @@
 }
 
 .community {
-  padding: 100px 0;
+  padding: 60px 0;
   display: flex;
   text-align: center;
   align-items: center;
@@ -35,7 +35,7 @@
 
 .community h1 {
   font-weight: 700;
-  font-size: 80px;
+  font-size: 70px;
   letter-spacing: 0.02em;
 }
 
@@ -46,9 +46,9 @@
 }
 
 .community h3 {
-  font-size: 40px;
+  font-size: 32px;
   color: green;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.05em;
 }
 
@@ -60,9 +60,10 @@
 
 .community input {
   background: white;
-  padding: 20px 0;
+  padding: 14px 0;
   border: none;
   margin-top: 2rem;
+  width: 400px
 }
 
 @media (max-width:600px) {
@@ -78,12 +79,12 @@
 .community button {
   color: white;
   background-color: black;
-  padding: 15px 40px;
-  margin-top: 2rem;
+  padding: 12px 40px;
+  margin-top: 25px;
   border: 3px solid white;
   box-shadow: 1px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 600px) {
@@ -148,8 +149,9 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 55px 0px;
 }
 
 .brands h2 {

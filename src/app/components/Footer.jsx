@@ -4,25 +4,25 @@ import styles from "../style/footer.module.css";
 
 const footerSocial = [
   {
-    link: "https://www.linkedin.com/in/edwardburnsjr?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    link: "https://youtube.com/@marcothechampion?si=Q9wKW7O1zjUNI-Tf",
     img: "	/images/Youtube.png",
     name: "youtube",
     followers: 2.25,
   },
   {
-    link: "https://www.instagram.com/dr.edwardburnsjr?igsh=ODA1NTc5OTg5Nw==",
+    link: "https://www.instagram.com/marcothechampion?igsh=MzRlODBiNWFlZA==",
     img: "/images/instagram2.png",
     name: "Instagram",
     followers: 2.25,
   },
   {
-    link: "https://www.tiktok.com/@dr.edwardburns?_t=8iavjpZ8fPi&_r=1",
+    link: "https://www.tiktok.com/@marcothechampion?_t=8l4fMYzpcVP&_r=1",
     img: "/images/tiktok.png",
     name: "TikTok",
     followers: 2.25,
   },
   {
-    link: "https://www.facebook.com/profile.php?id=100084015300138&mibextid=LQQJ4d",
+    link: "https://www.facebook.com/marcochampion777?mibextid=JRoKGi",
     img: "/images/facebook.png",
     name: "Facebook",
     followers: 2.25,
@@ -114,7 +114,7 @@ const Footer = () => {
             <ul className={styles.socialLinks}>
               {footerSocial?.map((item, i) => (
                 <li key={i}>
-                  <Link href={item.link}>
+                  <Link href={item.link} target="_blank">
                     <img src={item.img} alt="" height='50px' width='50px' />
                   </Link>
                 </li>

@@ -23,11 +23,14 @@ const BootcampForm = () => {
       <div className={styles.containerFix}>
 
         <div className={styles.heading}>
-          <h1>REPROGRAM</h1>
-          <h1>BOOTCAMP</h1>
-          <div style={{ marginTop: "15px" }}>
-            <h3>Join the Waitlist below </h3>
-            <h3>to be notified when we open</h3>
+          <div style={{
+            textTransform: 'uppercase',
+            fontSize: '40px',
+            fontFamily: 'Blanka !important',
+            color: 'white'
+          }}>REPROGRAM BOOTCAMP </div>
+          <div style={{ margin: "15px 0px 20px 0" }}>
+            <h3>Join the Waitlist below to be notified when we open </h3>
           </div>
         </div>
 

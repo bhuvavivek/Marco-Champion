@@ -16,6 +16,26 @@ const page = () => {
     <div className={`${styles.mainHero}`}>
       <Navigation />
       <div className={styles.ContaintWrapper}>
+
+        <div style={{
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginBottom: '40px'
+
+        }}>
+          <div style={{
+            fontSize: '40px',
+            fontWeight: 'bold',
+            color: 'white',
+            fontFamily: 'Blanka '
+          }}>
+            contact
+          </div>
+        </div>
+
+
         {/* contact form div */}
         <form className={styles.contactForm}>
           {/* Name And Name Inputs*/}
@@ -24,7 +44,7 @@ const page = () => {
               NAME <span>(REQUIRED)</span>
             </h1>
             <div className={styles.NameInputs}>
-              
+
               {/* first Name */}
               <div>
                 <input
