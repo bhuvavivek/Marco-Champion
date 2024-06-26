@@ -63,19 +63,7 @@ const page = () => {
           </div> */}
           <Card className="border-0 text-center rounded-0 text-light responsive_thistext" style={{ backgroundColor: "black", paddingTop: '70px' }}>
             <div style={{ margin: "5%", fontSize: '20vh', marginBottom: '80px' }} className={styles.boxmain}>
-              <div className={styles.headerEotion} style={{
-                textTransform: 'uppercase',
-                fontSize: '40px',
-                fontFamily: 'Blanka !important'
-              }}>Change your thoughts</div>
-              <hr style={{ borderColor: "black" }} />
-              <h3 className={styles.headerEotionDesc} style={{
-                fontSize: "28px",
-
-              }}>
-                THOUGHT DISCONNECTED FROM EMOTION HAS NO <br /> EFFECT, EMOTION NOT
-                GUIDED BY THOUGHT IS <br />CHAOS.
-              </h3>
+              <h1>&quot;CHANGE YOUR THOUGHTS CHANGE YOUR LIFE&quot; </h1>
             </div>
           </Card>
 
@@ -95,7 +83,21 @@ const page = () => {
           <Form />
 
           <div className={`${styles2.sec_2} ${styles2.sec_3} text-center text_h1_thoughts`}>
-            <h1>&quot;CHANGE YOUR THOUGHTS CHANGE YOUR LIFE&quot; </h1>
+
+            <div className={styles.headerEotion} style={{
+              textTransform: 'uppercase',
+              fontSize: '40px',
+              fontFamily: 'Blanka !important',
+              color: 'white'
+            }}>Change your thoughts</div>
+            <hr style={{ borderColor: "black" }} />
+            <h3 className={styles.headerEotionDesc} style={{
+              fontSize: "28px",
+
+            }}>
+              THOUGHT DISCONNECTED FROM EMOTION HAS NO <br /> EFFECT, EMOTION NOT
+              GUIDED BY THOUGHT IS <br />CHAOS.
+            </h3>
           </div>
 
           {/* ......................................................... FREQUENTLY ASKED QUESTIONS part code (5)......................................................... */}

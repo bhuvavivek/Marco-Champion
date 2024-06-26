@@ -138,7 +138,9 @@ const page = () => {
         <div className={styles.champWeekWrapper}>
           <div className={styles.champweek}>
             <img src="/images/CHAMP_WEEKLY.svg" alt="" width='100%' />
-            <h1>SIGN UP FOR MY WEEKLY NEWSLETTER</h1>
+            <h1 style={{
+              fontSize: '30px'
+            }}>SIGN UP FOR MY WEEKLY NEWSLETTER</h1>
             <input type="text" placeholder="Your Email" width="100%" />
             <button>SUBSCRIBE</button>
           </div>

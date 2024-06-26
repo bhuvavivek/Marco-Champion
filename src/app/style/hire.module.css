@@ -96,6 +96,7 @@
 .heroMain {
   align-self: center;
 }
+
 @media (max-width: 600px) {
   .heroMain {
     /* margin-top: -10%; */
@@ -118,6 +119,7 @@
     z-index: 2;
   }
 }
+
 @media (max-width: 800px) {
   .heroMainFlex {
     width: 100%;
@@ -143,15 +145,16 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-block: 100px;
+  padding-block: 60px;
 }
 
 .sec_2 h1 {
   color: white;
   /* line-height: 2.7em; */
 }
+
 @media (max-width: 600px) {
-  .sec_2 h1{
+  .sec_2 h1 {
     font-size: 22px;
   }
 }
@@ -226,4 +229,3 @@
     width: 50px;
   }
 }
-

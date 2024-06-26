@@ -48,19 +48,37 @@ const Page = () => {
         <div className={styles2.ShopHeroSection}>
           {!isSmallScreen && <img src="/images/Shop-Hero.png" alt="" width='100%' />}
           {isSmallScreen && <img src="/images/Shop-Hero-PC.png" style={{
-            height: '100vh'
+            height: '100vh',
+            width: '100%'
           }} />}
           <p className={styles2.heading}>
-            “IF YOU WANT TO CHANGE THE WORLD, <br />
-            MAKE DOING THE RIGHT THING <br />
-            PROFITABLE.”
+            SHOP
           </p>
+
+          <div className={`${styles2.textBox} ${styles2.lefttextBox}`}>
+            MARCO CHAMPION
+            <span>
+              <span style={{
+                color: '#216023'
+              }}>“CHOSEN ONE”</span> COLLECTIONS
+            </span>
+          </div>
+
+          <div className={`${styles2.textBox} ${styles2.righttextBox}`}>
+            SHOP ALL
+
+            <span >
+              <span style={{
+                color: "#6ef4fb"
+              }}>MOTIV</span> COLLECTIONS
+            </span>
+          </div>
         </div>
 
 
         {/*------------------------------------------- my business part ------------------------------------------- */}
         <div className={styles2.brands}>
-          <h2>MY BUSINESSES</h2>
+          <h2>CHAMPION&#39;S  VENTURES</h2>
           {!isSmallScreen ?
             (
               <div style={{ marginTop: "-100px" }}>
@@ -85,6 +103,7 @@ const Page = () => {
                 return (
                   <>
                     <img
+                      key={index}
                       src={brand}
                       alt={`${brand.split("/").pop().split(".")[0]} ${index + 1}`}
                     />
@@ -96,17 +115,17 @@ const Page = () => {
 
 
         {/*------------------------------------------- JOIN COMMUNITY FORM part ------------------------------------------- */}
-        <div className={styles2.community}>
+        {/* <div className={styles2.community}>
           <h2>MARCO CHAMPION</h2>
           <h1>TEXT COMMUNITY </h1>
           <h3>TEXT ME FOR 1 ON 1 CONVERSATIONS</h3>
           <input type="text" placeholder="PHONE #" width='100%' />
           <button>JOIN COMMUNITY NUMBER</button>
-        </div>
+        </div> */}
 
         <Footer />
       </div>
-    </div>
+    </div >
   );
 };
 

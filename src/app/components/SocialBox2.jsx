@@ -24,7 +24,7 @@ const SocialBox2 = () => {
         >
             <div className={styles.growMain}
             >
-                <div className={styles.grow} style={{
+                <div className={` ${styles.socialgrow}`} style={{
                     position: 'relative',
                     bottom: '0',
                 }}>

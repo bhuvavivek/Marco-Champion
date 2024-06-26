@@ -126,7 +126,7 @@ const Footer = () => {
             <ul className={styles.links}>
               <li className="sprite-graffiti">MY STORY</li>
               <li className="sprite-graffiti">REPROGRAM</li>
-              <li className="sprite-graffiti">BIZ</li>
+              <li className="sprite-graffiti">SHOP</li>
               <li className="sprite-graffiti">Contact</li>
             </ul>
           </div>
